@@ -17,10 +17,15 @@ function foodhut_logo(){
 }
 
 function foodhut_header_button(){
-    if(true == get_theme_mod( 'switch_button', 'on' ) ){
+
+    $button_switch = get_theme_mod( 'switch_button', 'on' );
+    $button_text = get_theme_mod('button_text', __('Components', 'foodhut'));
+    $button_url = get_theme_mod('button_url', __('#', 'foodhut'));
+
+    if(true ==  $button_switch){
         ?>
         <div class="header-btn-area">
-            <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
+            <a href="<?php echo esc_url($button_url); ?>" class="btn btn-primary ml-xl-4"><?php echo esc_html($button_text);?></a>
         </div>
         <?php
     }  

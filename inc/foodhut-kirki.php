@@ -62,7 +62,7 @@ function foodhut_header_section(){
         ]
     );
 
-    new \Kirki\Field\URL(
+    new \Kirki\Field\Text(
 	[
 		'settings' => 'button_url',
 		'label'    => esc_html__( 'Button URL', 'foodhut' ),
