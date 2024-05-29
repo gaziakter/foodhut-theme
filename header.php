@@ -20,17 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <?php header_left_menu(); ?>
             <?php foodhut_logo() ?>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testmonial">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
+            <?php header_right_menu(); ?>
             <?php foodhut_header_button(); ?>
         </div>
     </nav>

@@ -47,7 +47,10 @@ function header_left_menu(){
 function header_right_menu(){
     wp_nav_menu(
         array(
-            'theme_location' => 'header-right-menu',
+            'theme_location'  => 'header-right-menu',
+            'menu_class'  => 'navbar-nav',
+            'fallback_cb'       => 'Foodhut_Walker_Nav_Menu::fallcak',
+            'walker'            => new Foodhut_Walker_Nav_Menu,
         )
     );
 }
