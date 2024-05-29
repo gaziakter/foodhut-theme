@@ -54,3 +54,16 @@ function header_right_menu(){
         )
     );
 }
+
+/** Footer copyright text */
+function footer_copyright(){
+    $copyright_text = get_theme_mod('footer_copyright_text', __('© Copyright 2024 Made with  By DevCRUD', 'foodhut'));
+
+    if(!empty($copyright_text)){
+    ?>
+        <div class="bg-dark text-light text-center border-top wow fadeIn">
+            <p class="mb-0 py-3 text-muted small"><?php echo wp_kses_post( $copyright_text); ?></p>
+        </div>
+    <?php
+    }
+}

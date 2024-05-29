@@ -16,9 +16,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-dark text-light text-center border-top wow fadeIn">
-        <p class="mb-0 py-3 text-muted small">&copy; Copyright 2024 Made with <i class="ti-heart text-danger"></i> By <a href="#">DevCRUD</a></p>
-    </div>
+    <?php footer_copyright(); ?>
     <!-- end of page footer -->
 
     <!-- google maps -->
