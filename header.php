@@ -43,10 +43,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                    <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
-                </li>
             </ul>
+            <?php foodhut_header_button(); ?>
         </div>
     </nav>
    

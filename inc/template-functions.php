@@ -15,3 +15,14 @@ function foodhut_logo(){
         <?php 
     }
 }
+
+function foodhut_header_button(){
+    if(true == get_theme_mod( 'switch_button', 'on' ) ){
+        ?>
+        <div class="header-btn-area">
+            <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
+        </div>
+        <?php
+    }  
+}
+

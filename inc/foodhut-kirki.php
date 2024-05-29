@@ -30,6 +30,20 @@ function foodhut_header_section(){
             'default'     => get_template_directory_uri().'/assets/imgs/logo.svg'
         ]
     );
+
+    new \Kirki\Field\Checkbox_Switch(
+        [
+            'settings'    => 'switch_button',
+            'label'       => esc_html__( 'Button Switch', 'foodhut' ),
+            'description' => esc_html__( 'Simple switch control for enable or disable the button', 'foodhut' ),
+            'section'     => 'persona_header_section',
+            'default'     => 'on',
+            'choices'     => [
+                'on'  => esc_html__( 'Enable', 'foodhut' ),
+                'off' => esc_html__( 'Disable', 'foodhut' ),
+            ],
+        ]
+    );
 }
 
 foodhut_header_section();
