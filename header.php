@@ -33,8 +33,8 @@
                 </li>
             </ul>
             <a class="navbar-brand m-auto" href="index.html">
-                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
-                <span class="brand-txt">Food Hut</span>
+                <img src="<?php echo get_template_directory_uri().'/assets/imgs/logo.svg'; ?>" class="brand-img" alt="">
+                <span class="brand-txt">Food Hut</span> 
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
