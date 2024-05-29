@@ -41,9 +41,43 @@ function foodhut_header_section(){
             'choices'     => [
                 'on'  => esc_html__( 'Enable', 'foodhut' ),
                 'off' => esc_html__( 'Disable', 'foodhut' ),
+            ],  
+        ]
+    );
+
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'button_text',
+            'label'    => esc_html__( 'Button Text', 'foodhut' ),
+            'section'  => 'persona_header_section',
+            'default'  => esc_html__( 'Components', 'foodhut' ),
+            'priority' => 10,
+            'active_callback' => [
+                [
+                    'setting'  => 'switch_button',
+                    'operator' => '==',
+                    'value'    => true,
+                ]
             ],
         ]
     );
+
+    new \Kirki\Field\URL(
+	[
+		'settings' => 'button_url',
+		'label'    => esc_html__( 'Button URL', 'foodhut' ),
+		'section'  => 'persona_header_section',
+		'default'  => '#',
+		'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'switch_button',
+                'operator' => '==',
+                'value'    => true,
+            ]
+        ],
+	]
+);
 }
 
 foodhut_header_section();
