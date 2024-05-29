@@ -18,20 +18,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#book-table">Book-Table</a>
-                </li>
-            </ul>
+            <?php header_left_menu(); ?>
             <?php foodhut_logo() ?>
             <ul class="navbar-nav">
                 <li class="nav-item">

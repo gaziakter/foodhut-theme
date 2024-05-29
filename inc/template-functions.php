@@ -31,3 +31,23 @@ function foodhut_header_button(){
     }  
 }
 
+/** Header left menu */
+function header_left_menu(){
+    wp_nav_menu(
+        array(
+            'theme_location'  => 'header-left-menu',
+            'menu_class'  => 'navbar-nav',
+            'fallback_cb'       => 'Foodhut_Walker_Nav_Menu::fallcak',
+            'walker'            => new Foodhut_Walker_Nav_Menu,
+        )
+    );
+}
+
+/** Header right menu */
+function header_right_menu(){
+    wp_nav_menu(
+        array(
+            'theme_location' => 'header-right-menu',
+        )
+    );
+}

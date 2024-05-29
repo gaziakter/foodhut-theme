@@ -54,6 +54,7 @@ add_action( 'after_setup_theme', 'foodhut_support' );
 /** Include files */
 include_once('inc/common/scripts.php');
 include_once('inc/template-functions.php');
+include_once('inc/common/nav-walker.php');
 
 if(class_exists('kirki')){
     include_once('inc/foodhut-kirki.php');
