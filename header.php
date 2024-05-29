@@ -32,10 +32,7 @@
                     <a class="nav-link" href="#book-table">Book-Table</a>
                 </li>
             </ul>
-            <a class="navbar-brand m-auto" href="index.html">
-                <img src="<?php echo get_template_directory_uri().'/assets/imgs/logo.svg'; ?>" class="brand-img" alt="">
-                <span class="brand-txt">Food Hut</span> 
-            </a>
+            <?php foodhut_logo() ?>
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
