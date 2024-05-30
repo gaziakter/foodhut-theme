@@ -6,8 +6,7 @@
             <?php dynamic_sidebar( 'footer-left-widget'); ?>
             </div>
             <div class="col-sm-4">
-                <h3>CALL US</h3>
-                <P class="text-muted">(123) 456-7890</P>
+            <?php dynamic_sidebar( 'footer-center-widget'); ?>
             </div>
             <div class="col-sm-4">
                 <h3>FIND US</h3>

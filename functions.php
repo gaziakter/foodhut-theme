@@ -72,6 +72,16 @@ function foodhut_widgets(){
         'before_title'  => '<h3>',
         'after_title'   => '</h3><div class="text-muted">',
     ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Footer Center Widget', 'foodhut' ),
+        'id'            => 'footer-center-widget',
+        'description'   => __( 'Widgets in this area will be shown on footer left side.', 'foodhut' ),
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget'  => '</div></div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3><div class="text-muted">',
+    ) );
 }
 
 add_action( 'widgets_init', 'foodhut_widgets' );
