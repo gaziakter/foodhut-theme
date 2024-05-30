@@ -9,8 +9,7 @@
             <?php dynamic_sidebar( 'footer-center-widget'); ?>
             </div>
             <div class="col-sm-4">
-                <h3>FIND US</h3>
-                <P class="text-muted">12345 Fake ST NoWhere AB Country</P>
+            <?php dynamic_sidebar( 'footer-right-widget'); ?>
             </div>
         </div>
     </div>
