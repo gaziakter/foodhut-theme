@@ -59,3 +59,19 @@ include_once('inc/common/nav-walker.php');
 if(class_exists('kirki')){
     include_once('inc/foodhut-kirki.php');
 }
+
+/** register footer widget */
+function foodhut_widgets(){
+
+    register_sidebar( array(
+        'name'          => __( 'Footer Left Widget', 'foodhut' ),
+        'id'            => 'footer-left-widget',
+        'description'   => __( 'Widgets in this area will be shown on footer left side.', 'foodhut' ),
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget'  => '</div></div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3><div class="text-muted">',
+    ) );
+}
+
+add_action( 'widgets_init', 'foodhut_widgets' );

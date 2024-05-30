@@ -3,8 +3,7 @@
     <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
         <div class="row">
             <div class="col-sm-4">
-                <h3>EMAIL US</h3>
-                <P class="text-muted">info@website.com</P>
+            <?php dynamic_sidebar( 'footer-left-widget'); ?>
             </div>
             <div class="col-sm-4">
                 <h3>CALL US</h3>
