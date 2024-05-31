@@ -11267,25 +11267,29 @@ pre {
 }
 
 .has-img-bg {
-  background: url(../imgs/about-section.jpg) no-repeat center center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .has-bg-overlay {
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 1;
 }
 
-.has-bg-overlay:before {
+.has-bg-overlay::after {
   content: '';
   position: absolute;
-  top: 0;
+  z-index: -2;  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../imgs/book-table-img.jpg) no-repeat center center fixed;
-  background-size: cover;
-  z-index: -1;
-  opacity: .3;
+  background: #343a40;
+  opacity: 0.6;
 }
 #book-table{
   margin-top: 150px;
@@ -11299,17 +11303,18 @@ pre {
 .tab-content{
   margin-bottom: 80px;
 }
+/*
 .has-bg-overlay:after {
   content: '';
   position: absolute;
-  top: 0;
+  z-index: -2;  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #343a40;
-  z-index: -2;
-}
 
+}
+*/
 .middle-items {
   display: -webkit-flex;
   display: -ms-flex;
